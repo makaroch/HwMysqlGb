@@ -45,4 +45,5 @@ select gender, count(*)
 from likes as L join profiles as  P
 on L.user_id = P.user_id
 group by gender
+order by count(*) desc
 limit 1;
